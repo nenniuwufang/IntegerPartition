@@ -18,6 +18,8 @@ int *initArray(int n, int *array) {
 
 //令pointer1数组的第一位数字的值等于pointer数组第一位数字的值与最后一位数字的值相加，
 //剩余的值等于pointer数组其余位置的值
+//add a pos variable to record the position of the array
+//the pos variable may shift from the head to the tail
 int *partitionArray(int n, int pos, const int *pointer, int *pointer1) {
     if (pointer1 == NULL || pointer == NULL) {
         printf("Error: Missing Pointer value\n");
