@@ -1,0 +1,10 @@
+^D:\ACDEMICRESEARCH\INTEGERPARTITION\CMAKE-BUILD-DEBUG\CMAKEFILES\3000053D700396C0A1F047DA369F4A20\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -SD:/AcdemicResearch/IntegerPartition -BD:/AcdemicResearch/IntegerPartition/cmake-build-debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/AcdemicResearch/IntegerPartition/cmake-build-debug/IntegerPartition.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
