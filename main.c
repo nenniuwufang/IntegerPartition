@@ -16,10 +16,14 @@ int *initArray(int n, int *array) {
     return array;
 }
 
-//令pointer1数组的第一位数字的值等于pointer数组第一位数字的值与最后一位数字的值相加，
-//剩余的值等于pointer数组其余位置的值
-//add a pos variable to record the position of the array
-//the pos variable may shift from the head to the tail
+/*
+add the first number of pointer1 array with the last number of pointer array
+and the rest of the numbers of pointer1 array equal to the rest of the numbers
+of pointer array
+
+add a pos variable to record the position of the array the pos variable may
+ shift from the head to the tail
+*/
 int *partitionArray(int n, int pos, const int *pointer, int *pointer1) {
     if (pointer1 == NULL || pointer == NULL) {
         printf("Error: Missing Pointer value\n");
@@ -35,18 +39,20 @@ int *partitionArray(int n, int pos, const int *pointer, int *pointer1) {
 
 int main(int argc, char *argv[]) {
 
-    // if (argc != 2) {
-    //     printf("Error: Argument Error\n");
-    //     return ERROR;
-    // }
+/*
+    if (argc != 2) {
+        printf("Error: Argument Error\n");
+        return ERROR;
+    } // check the argument number is 2 or not
+*/
 
-    int num;//数组长度
-    // num = (int) strtol(argv[1], NULL, 10);//将字符串转换为整数
-    num = 6;
+    int num;//set the length of the array
+    num = (int) strtol(argv[1], NULL, 10);//turn the string into int
+    // set default num = 6;
 
-    int *pointer = (int *) malloc(num * sizeof(int));//动态分配内存
-    pointer = initArray(num, pointer);//初始化数组
-//    printf("argc num is %d\n", argc);
+    int *pointer = (int *) malloc(num * sizeof(int));//malloc the array pointer
+    pointer = initArray(num, pointer);//initialize the array
+//    printf("argc num is %d\n", argc); // check the argc num
 
 
     for (int i = 0; i < num - 1; i++) {
@@ -59,10 +65,10 @@ int main(int argc, char *argv[]) {
                 partition = partitionArray(num - i, 0, pointer, partition);
                 // todo -- we need to add a for loop to set pos value 
                 // from 0 to num - i - 1
-                pointer = partition; //将partition的地址赋值给pointer
+                pointer = partition; //give the pointer the address of partition
                 for (int k = 0; k < num - 1 - i; k++) {
                     printf("%d ", pointer[k]);
-                } //输出pointer数组
+                } //print the array pointer
                 printf("\n");
             // }
         }
