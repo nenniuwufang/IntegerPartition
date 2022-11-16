@@ -47,7 +47,8 @@ int main(int argc, char *argv[]) {
 */
 
     int num;//set the length of the array
-    num = (int) strtol(argv[1], NULL, 10);//turn the string into int
+    num = 6;
+    // num = (int) strtol(argv[1], NULL, 10);//turn the string into int
     // set default num = 6;
 
     int *pointer = (int *) malloc(num * sizeof(int));//malloc the array pointer
