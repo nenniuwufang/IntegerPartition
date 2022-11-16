@@ -6,6 +6,9 @@
 #define MALLOC_ERROR 1
 #define ERROR 2
 
+/*
+Init the first array
+*/
 
 int *initArray(int n, int *array) {
     for (int i = 0; i < n; i++) {
@@ -24,15 +27,18 @@ of pointer array
 add a pos variable to record the position of the array the pos variable may
  shift from the head to the tail
 */
+
 int *partitionArray(int n, int pos, const int *pointer, int *pointer1) {
     if (pointer1 == NULL || pointer == NULL) {
         printf("Error: Missing Pointer value\n");
         return NULL;
     } else {
         pointer1[pos] = pointer[pos] + pointer[n - 1];
-        for (int i = 1; i < n; i++) {
+        for (int i = pos + 1 ; i < n; i++) {
             pointer1[i] = pointer[i];
         }
+    // set the rest of the numbers of pointer1 array equal to 
+    //the rest of the numbers of pointer array
     }
     return pointer1;
 }
