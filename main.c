@@ -34,8 +34,16 @@ int *partitionArray(int n, int pos, const int *pointer, int *pointer1) {
         return NULL;
     } else {
         pointer1[pos] = pointer[pos] + pointer[n - 1];
-        for (int i = pos + 1 ; i < n; i++) {
-            pointer1[i] = pointer[i];
+        if (pos > 0)
+        {
+            for (int i; i< pos; i++)
+            {
+                pointer1[i] = pointer[i];
+            }
+        }
+        
+        for (int j = pos + 1 ; j < n; j++) {
+            pointer1[j] = pointer[j];
         }
     // set the rest of the numbers of pointer1 array equal to 
     //the rest of the numbers of pointer array
