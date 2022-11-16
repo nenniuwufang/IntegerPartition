@@ -12,7 +12,6 @@ Init the first array
 
 int *initArray(int n, int *array)
 {
-    int i,j,k;
     for (int i = 0; i < n; i++)
     {
         array[i] = 1;
