@@ -4,7 +4,7 @@
 #include "string.h"
 
 #define MALLOC_ERROR 1
-#define ERROR 2
+#define ARG_ERROR 2
 
 /*
 Init the first array
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
     if (argc != 2)
     {
         printf("Error: Argument Error\n");
-        return ERROR;
+        return ARG_ERROR;
     } // check the argument number is 2 or not
 
     int num; // set the length of the array
