@@ -61,17 +61,16 @@ int *partitionArray(int n, int pos, const int *pointer, int *pointer1)
 int main(int argc, char *argv[])
 {
 
-    /*
-        if (argc != 2) {
-            printf("Error: Argument Error\n");
-            return ERROR;
-        } // check the argument number is 2 or not
-    */
+    if (argc != 2)
+    {
+        printf("Error: Argument Error\n");
+        return ERROR;
+    } // check the argument number is 2 or not
 
     int num; // set the length of the array
-    num = 6;
-    // num = (int) strtol(argv[1], NULL, 10);//turn the string into int
-    // set default num = 6;
+    
+    num = (int) strtol(argv[1], NULL, 10);//turn the string into int
+    // default num = 6;
 
     int *pointer = (int *)malloc(num * sizeof(int)); // malloc the array pointer
     pointer = initArray(num, pointer);               // initialize the array
