@@ -49,6 +49,14 @@ cmake_ninja_workdir = D$:/AcdemicResearch/IntegerPartition/cmake-build-debug/
 
 build cmake_object_order_depends_target_IntegerPartition: phony || CMakeFiles/IntegerPartition.dir
 
+build CMakeFiles/IntegerPartition.dir/main_v1.c.obj: C_COMPILER__IntegerPartition_Debug D$:/AcdemicResearch/IntegerPartition/main_v1.c || cmake_object_order_depends_target_IntegerPartition
+  DEP_FILE = CMakeFiles\IntegerPartition.dir\main_v1.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\IntegerPartition.dir
+  OBJECT_FILE_DIR = CMakeFiles\IntegerPartition.dir
+  TARGET_COMPILE_PDB = CMakeFiles\IntegerPartition.dir\
+  TARGET_PDB = IntegerPartition.pdb
+
 build CMakeFiles/IntegerPartition.dir/main.c.obj: C_COMPILER__IntegerPartition_Debug D$:/AcdemicResearch/IntegerPartition/main.c || cmake_object_order_depends_target_IntegerPartition
   DEP_FILE = CMakeFiles\IntegerPartition.dir\main.c.obj.d
   FLAGS = -g -std=gnu99
@@ -65,7 +73,7 @@ build CMakeFiles/IntegerPartition.dir/main.c.obj: C_COMPILER__IntegerPartition_D
 #############################################
 # Link the executable IntegerPartition.exe
 
-build IntegerPartition.exe: C_EXECUTABLE_LINKER__IntegerPartition_Debug CMakeFiles/IntegerPartition.dir/main.c.obj
+build IntegerPartition.exe: C_EXECUTABLE_LINKER__IntegerPartition_Debug CMakeFiles/IntegerPartition.dir/main_v1.c.obj CMakeFiles/IntegerPartition.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\IntegerPartition.dir

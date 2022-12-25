@@ -1,7 +1,9 @@
 # ninja log v5
-1	42	6902460590943577	CMakeFiles/IntegerPartition.dir/main.c.obj	c7e67929a7d5d6ce
-42	95	6902460591451893	IntegerPartition.exe	7f6a258ead201c6f
-0	41	6902472582555643	CMakeFiles/IntegerPartition.dir/main.c.obj	c7e67929a7d5d6ce
-41	96	6902472583090296	IntegerPartition.exe	7f6a258ead201c6f
 0	207	6936507846451733	CMakeFiles/IntegerPartition.dir/main.c.obj	c7e67929a7d5d6ce
 207	433	6936507848698213	IntegerPartition.exe	7f6a258ead201c6f
+1	48	6936511242946591	CMakeFiles/IntegerPartition.dir/main_v1.c.obj	b2f229de7f211616
+1	36	6936511450974670	CMakeFiles/IntegerPartition.dir/main.c.obj	c7e67929a7d5d6ce
+1	40	6936512900437931	CMakeFiles/IntegerPartition.dir/main_v1.c.obj	b2f229de7f211616
+40	94	6936512900959697	IntegerPartition.exe	25eb0e333389b234
+1	27	6936513039152410	CMakeFiles/IntegerPartition.dir/main_v1.c.obj	b2f229de7f211616
+27	81	6936513039673850	IntegerPartition.exe	25eb0e333389b234
