@@ -1,11 +1,10 @@
 #include "stdio.h"
 #include "malloc.h"
 #include "stdlib.h"
-#include "string.h"
 
 #define MALLOC_ERROR 1
 #define ARG_ERROR 2
-
+#define MISSING_POINTER_VALUE 3
 /*
 Init the first array
 */
@@ -35,7 +34,7 @@ int *partitionArray(int n, int pos, const int *pointer, int *pointer1)
     if (pointer1 == NULL || pointer == NULL)
     {
         printf("Error: Missing Pointer value\n");
-        return NULL;
+        return MISSING_POINTER_VALUE;
     }
     else
     {
